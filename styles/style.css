@@ -18,6 +18,7 @@
   border: 1px solid red;
   position: relative;
   overflow: hidden;
+  margin-bottom: 100px;
   /* выше установили ограничения для секции */
 }
 .logo_place_header {
@@ -26,20 +27,30 @@
   height: 32;
   top: 30px;
   left: 64px;
+  border: 1px solid red;
 }
 
 .header__title {
   align-self: center;
   left: 64px;
   width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  position: relative;
+  border: 1px solid red;
 }
 
-.header_subtitle {
+.header__subtitle {
   position:absolute;
   width: 388px;
   left: 64px;
   bottom: 30px;
-}
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  border: 1px solid red;
+} 
 
 .header__main-illustration {
   position: absolute;
@@ -48,6 +59,11 @@
   bottom: 0;
   right: 0;
   z-index: 1;
+  border: 1px solid red;
+}
+
+.header__link::after {
+content: '\2192';
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -55,8 +71,10 @@
   height: 568px;
   width: 568px;
   position: absolute;
-  color: #2f80ed;
-  margin-top: 64px;
+  background-color: #2f80ed;
+  top: 64px;
+  right: 0px;
+  border: 1px solid red;
 }
 
 /* и элемента с модификатором вида ключ-значение */
