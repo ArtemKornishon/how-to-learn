@@ -1,11 +1,7 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -15,11 +11,9 @@
   max-height: 756px;
   background-color: #f2f2f2;
   display: flex;
-  border: 1px solid red;
   position: relative;
   overflow: hidden;
   margin-bottom: 100px;
-  /* выше установили ограничения для секции */
 }
 .logo_place_header {
   position: absolute;
@@ -27,7 +21,6 @@
   height: 32;
   top: 30px;
   left: 64px;
-  border: 1px solid red;
 }
 
 .header__title {
@@ -39,7 +32,6 @@
   letter-spacing: 3px;
   font-weight: bold;
   position: relative;
-  border: 1px solid red;
 }
 
 .header__subtitle {
@@ -50,7 +42,6 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  border: 1px solid red;
 } 
 
 .header__main-illustration {
@@ -60,7 +51,6 @@
   bottom: 0;
   right: 0;
   z-index: 1;
-  border: 1px solid red;
 }
 
 .header__link {
@@ -71,7 +61,6 @@
 content: '\2192';
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -79,10 +68,8 @@ content: '\2192';
   background-color: #2f80ed;
   top: 64px;
   right: 0px;
-  border: 1px solid red;
 }
 
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -90,16 +77,20 @@ content: '\2192';
   top: 80px;
 }
 
+content {
+ background-color: white;
+}
+
 .description {
   margin-top: 100px;
   margin-bottom: 100px;
+  background-color: white;
 }
 
 .two-columns {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  border: 1px solid red;
   margin: 0 auto;
 }
 
@@ -109,18 +100,15 @@ content: '\2192';
   font-weight: normal;
   font-size: 18px;
   color: #2f80ed;
-  border: 1px solid red;
 }
 
 .two-columns__main-text {
-  border: 1px solid red;
   width: 80%;
   min-width: 784px;
   font-weight: normal;
 }
 
 .two-columns__paragraph {
-  border: 1px solid red;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -129,7 +117,6 @@ content: '\2192';
 }
 
 .two-columns__span-accent {
-  border: 1px solid red;
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
@@ -140,7 +127,7 @@ p:last-of-type {
 
 .digits {
   margin: 100px auto;
-  border: 1px solid red;
+  background-color: white;
 }
 
 .section-title {
@@ -150,7 +137,6 @@ p:last-of-type {
   font-weight: bold;
   text-align: center;
   margin: 0 auto 20px;
-  border: 1px solid red;
 }
 
 .section-subtitle {
@@ -160,7 +146,6 @@ p:last-of-type {
   font-weight: normal;
   margin: 0 auto;
   text-align: center;
-  border: 1px solid red;
 }
 
 .table {
@@ -171,21 +156,18 @@ p:last-of-type {
  flex-direction: row;
  margin: auto;
   list-style: none;
-  border: 1px solid red;
   position: relative;
 }
 
 .table__cell {
  width: 250px;
  margin-top: 60px;
- border: 1px solid red;
 }
 
 .table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  border: 1px solid red;
   margin: 0 auto;
 }
 
@@ -193,12 +175,10 @@ p:last-of-type {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  border: 1px solid red;
 }
 
 .feynman {
   display: flex;
-  border: 1px solid red;
   overflow: hidden;
   position: relative;
   margin-top: 100px;
@@ -207,6 +187,7 @@ p:last-of-type {
   max-height: 756px;
   flex-direction: column;
   padding: 0;
+  background-color: #f2f2f2;
 }
 
 .feynman__title {
@@ -217,7 +198,6 @@ p:last-of-type {
   font-size: 120px;
   font-weight: bold;
   margin-top: 0;
-  border: 1px solid red;
   text-align: center;
 }
 
@@ -252,7 +232,7 @@ align-self: center;
 }
 
 .kaufman {
-  background-color:#1f1f1f ;
+  background-color:#1f1f1f;
   position: relative;
   overflow: hidden;
 }
@@ -292,4 +272,92 @@ align-self: center;
 
 .section-subtitle_theme_dark {
   color: white;
+}
+
+footer {
+  min-height: 350px;
+  background-color:#1f1f1f;
+  padding-top: 60px;
+}
+
+.footer__columns {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  min-height:350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_place_footer {
+  width: 228px;
+  height: 32px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__author {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.footer__column_content-info { 
+  margin-bottom:16px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer__column_content-social {
+  margin-bottom:16px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer__column-heading {
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-links {
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 16px;
+  line-height: 30px;
+  font-size: 18px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer a {
+  color: white;
+}
+
+.footer__social-icons {
+  width:16px;
+  height:16px; 
 }
